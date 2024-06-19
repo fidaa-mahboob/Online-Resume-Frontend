@@ -7,36 +7,36 @@ export default function ResumePage() {
 
   const RESUME_DATA = {
     work: [
-    {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      start: "2021",
-      end: "2024",
-      description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: [],
-      title: "Android Developer → Lead Android Developer",
-      start: "2012",
-      end: "2015",
-      description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
-    }]
+      {
+        company: "Parabol",
+        link: "https://parabol.co",
+        badges: ["Remote"],
+        title: "Senior Full Stack Developer",
+        start: "2021",
+        end: "2024",
+        description:
+          "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
+      },
+      {
+        company: "Clevertech",
+        link: "https://clevertech.biz",
+        badges: ["Remote"],
+        title: "Lead Android Developer → Full Stack Developer",
+        start: "2015",
+        end: "2021",
+        description:
+          "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
+      },
+      {
+        company: "Jojo Mobile",
+        link: "https://bsgroup.eu/",
+        badges: [],
+        title: "Android Developer → Lead Android Developer",
+        start: "2012",
+        end: "2015",
+        description:
+          "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
+      }]
   }
   return (
     <div className="flex flex-col gap-3 text-center content-center bg-red-600">
@@ -49,14 +49,12 @@ export default function ResumePage() {
         </div>
       </div>
       <div className="flex flex-col gap-6 bg-blue-400">
-        <div>
-          <h2 className="text-xl"><strong>About</strong></h2>
-          <div className="flex justify-center w-auto py-8 px-10 bg-yellow-50">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
         <Section>
-          <h2 className="text-xl"><strong>Skills</strong></h2>
+          <h2 className="text-xl font-bold">About</h2>
+          <p className="text-pretty text-left text-sm text-muted-foreground">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </Section>
+        <Section>
+          <h2 className="text-xl font-bold">Skills</h2>
         </Section>
         <Section>
           <h2 className="text-xl font-bold">Experience</h2>
