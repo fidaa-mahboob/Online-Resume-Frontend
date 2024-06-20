@@ -1,4 +1,5 @@
 import { title } from "@/components/primitives";
+import { ProjectCard } from "@/components/project-card";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
@@ -10,7 +11,7 @@ export default function ResumePage() {
   return (
     <>
       <div className="flex items-center justify-between bg-red-600">
-        <div className="flex-1 space-y-1.5">
+        <div className="flex-1 space-y-1.5 text-center">
           <div>
             <h1 className="text-4xl">{RESUME_DATA.name}</h1>
           </div>
@@ -32,7 +33,7 @@ export default function ResumePage() {
         </div>
       </Section>
       <Section>
-        <h2 className="text-xl font-bold">Experience</h2>
+        <h2 className="text-xl font-bold">Work Experience</h2>
         {RESUME_DATA.work.map((work) => {
           return (
             <Card key={work.company}>
@@ -71,9 +72,42 @@ export default function ResumePage() {
           );
         })}
       </Section>
-      <Section>
-        <h2 className="text-xl"><strong>Projects</strong></h2>
+      <Section className="print-force-new-page scroll-mb-16">
+        <h2 className="text-xl font-bold">Projects</h2>
+        <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {RESUME_DATA.projects.map((project) => {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  tags={project.techStack}
+                  link={"link" in project ? project.link.href : undefined}
+                />
+              );
+            })}
+          </div>
       </Section>
+      <Section>
+          <h2 className="text-xl font-bold">Education</h2>
+          {RESUME_DATA.education.map((education) => {
+            return (
+              <Card key={education.school}>
+                <CardHeader>
+                  <div className="flex items-center justify-between gap-x-2 text-base">
+                    <h3 className="font-semibold leading-none">
+                      {education.school}
+                    </h3>
+                    <div className="text-sm tabular-nums text-gray-500">
+                      {education.start} - {education.end}
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="mt-2">{education.degree}</CardContent>
+              </Card>
+            );
+          })}
+        </Section>
     </>
   );
 }
