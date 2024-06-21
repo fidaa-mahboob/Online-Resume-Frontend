@@ -23,6 +23,7 @@ import {
   DiscordIcon,
   SearchIcon,
   Logo,
+  LinkedInIcon,
 } from "@/components/icons";
 
 export const Navbar = () => {
@@ -62,7 +63,9 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <ThemeSwitch />
+          <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+            <LinkedInIcon className="text-default-500" />
+          </Link>
         </NavbarItem>
       </NavbarContent>
 
@@ -70,7 +73,9 @@ export const Navbar = () => {
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
+        <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+          <LinkedInIcon className="text-default-500" />
+        </Link>
         <NavbarMenuToggle />
       </NavbarContent>
 
