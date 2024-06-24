@@ -11,6 +11,12 @@ export const RESUME_DATA = {
       end: "2016",
     },
   ],
+  certications: [
+    {
+      name: "",
+      link: ""
+    }
+  ],
   work: [
     {
       company: "AWS Cloud Resume Challenge",

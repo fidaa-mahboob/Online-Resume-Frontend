@@ -89,6 +89,19 @@ export default function ResumePage() {
           </div>
       </Section>
       <Section>
+          <h2 className="text-xl font-bold">Certifications</h2>
+          {/* {RESUME_DATA.certications.map((cert) => {
+            return (
+              <Card key={cert.name}>
+                <CardHeader>
+                </CardHeader>
+                <CardContent>
+                </CardContent>                
+              </Card>
+            )
+          })} */}
+      </Section>
+      <Section>
           <h2 className="text-xl font-bold">Education</h2>
           {RESUME_DATA.education.map((education) => {
             return (
