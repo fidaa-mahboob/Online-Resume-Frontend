@@ -108,7 +108,7 @@ export const RESUME_DATA = {
       },
     },
     {
-      title: "Year progress",
+       title: "Year progress",
       techStack: ["Side Project", "TypeScript", "Next.js"],
       description: "Tracks current year progress and displays a countdown",
       link: {
