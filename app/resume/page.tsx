@@ -13,10 +13,22 @@ export default function ResumePage() {
       <div className="flex items-center justify-between bg-red-600">
         <div className="flex-1 space-y-1.5 text-center">
           <div>
-            <h1 className="text-4xl">{RESUME_DATA.name}</h1>
+            <h1 className="text-4xl font-extrabold">{RESUME_DATA.name}</h1>
           </div>
           <div>
             <h2>{RESUME_DATA.title}</h2>
+          </div>
+          <div>
+            <p className="text-pretty font-mono text-xs text-muted-foreground">
+              <a
+                className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
+                href={RESUME_DATA.locationLink}
+                target="_blank"
+              >
+                <GlobeIcon className="size-3" />
+                {RESUME_DATA.location}
+              </a>
+            </p>
           </div>
         </div>
       </div>
