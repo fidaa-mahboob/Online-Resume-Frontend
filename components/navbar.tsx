@@ -14,6 +14,7 @@ import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
+import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -34,7 +35,7 @@ export const Navbar = () => {
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <p className="font-bold text-inherit">M. F. Mahboob</p>
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -65,6 +66,12 @@ export const Navbar = () => {
           </Link>
           <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
             <LinkedInIcon className="text-default-500" />
+          </Link>
+          <Link aria-label="Mobile" href={`tel:${siteConfig.links.mobile}`}>
+            <PhoneIcon className="text-default-500" />
+          </Link>
+          <Link aria-label="Email" href={`mailto:${siteConfig.links.email}`}>
+            <MailIcon className="text-default-500" />
           </Link>
         </NavbarItem>
       </NavbarContent>

@@ -31,6 +31,8 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/fidaa-mahboob",
-    linkedin: "https://www.linkedin.com/in/fidaa-mahboob/", 
+    linkedin: "https://www.linkedin.com/in/fidaa-mahboob/",
+    email: "fidaamahboob@gmail.com",
+    mobile: "+447742304278" 
   },
 };
