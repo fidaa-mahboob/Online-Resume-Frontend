@@ -26,7 +26,6 @@ export default function BlogPage() {
 
   return (
     <div>
-      <h1 className="text-3xl font-bold">Blog</h1>
       <Section>
         <Suspense fallback={<p className="text-xl text-black-400">Loading Blog post feed......</p>}>
           {blog.map(item => (
