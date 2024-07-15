@@ -47,9 +47,9 @@ export default function RootLayout({
             <main className="container mx-auto max-w-7xl pt-1 px-1 flex-grow ">
               {children}
             </main>
-            <footer className="w-full flex items-center justify-center py-3 bg-zinc-300">
+            <footer className="w-full flex items-center justify-center py-3">
                 <span className="text-default-600">Copyright &copy;</span>
-                <p className="text-primary"> 2024 Fidaa Mahboob</p>
+                <p className="text-primary"> 2024 Fidaa Mahboob | Powered by AWS </p>
             </footer>
           </div>
         </Providers>

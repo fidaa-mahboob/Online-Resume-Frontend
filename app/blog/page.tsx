@@ -27,7 +27,6 @@ export default function BlogPage() {
   return (
     <div>
       <Section>
-        <Suspense fallback={<p className="text-xl text-black-400">Loading Blog post feed......</p>}>
           {blog.map(item => (
             <Card key={item.link} className="py-4">
               <CardHeader>
@@ -44,8 +43,6 @@ export default function BlogPage() {
               </CardHeader>
             </Card>
           ))}
-        </Suspense>
-
       </Section>
     </div>
   );
