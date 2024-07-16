@@ -7,23 +7,17 @@ import {
   NavbarItem,
   NavbarMenuItem,
 } from "@nextui-org/navbar";
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
 import { link as linkStyles } from "@nextui-org/theme";
-import NextLink from "next/link";
 import clsx from "clsx";
+import {MailIcon, PhoneIcon } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
 import {
-  TwitterIcon,
   GithubIcon,
-  DiscordIcon,
-  SearchIcon,
-  Logo,
+  LinkedInIcon,
 } from "@/components/icons";
+import { NavbarLogo } from "./logo";
 
 export const Navbar = () => {
 
@@ -31,15 +25,15 @@ export const Navbar = () => {
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
-          </NextLink>
+          <Link className="flex justify-start items-center gap-1" href="/">
+            <NavbarLogo/>
+            <p className="font-bold text-inherit">M. F. Mahboob</p>
+          </Link>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <NextLink
+          {siteConfig.navMenuItems.map((item) => (
+            <NavbarMenuItem key={item.href}>
+              <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:text-primary data-[active=true]:font-medium",
@@ -48,8 +42,8 @@ export const Navbar = () => {
                 href={item.href}
               >
                 {item.label}
-              </NextLink>
-            </NavbarItem>
+              </Link>
+            </NavbarMenuItem>
           ))}
         </ul>
       </NavbarContent>
@@ -62,7 +56,15 @@ export const Navbar = () => {
           <Link isExternal aria-label="Github" href={siteConfig.links.github}>
             <GithubIcon className="text-default-500" />
           </Link>
-          <ThemeSwitch />
+          <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+            <LinkedInIcon className="text-default-500" />
+          </Link>
+          <Link aria-label="Mobile" href={`tel:${siteConfig.links.mobile}`}>
+            <PhoneIcon className="text-default-500" />
+          </Link>
+          <Link aria-label="Email" href={`mailto:${siteConfig.links.email}`}>
+            <MailIcon className="text-default-500" />
+          </Link>
         </NavbarItem>
       </NavbarContent>
 
@@ -70,7 +72,9 @@ export const Navbar = () => {
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
+        <Link isExternal aria-label="Linkedin" href={siteConfig.links.linkedin}>
+          <LinkedInIcon className="text-default-500" />
+        </Link>
         <NavbarMenuToggle />
       </NavbarContent>
 
