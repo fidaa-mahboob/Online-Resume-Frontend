@@ -46,6 +46,7 @@
 		"next-themes": "^0.2.1",
 		"next-videos": "^1.4.1",
 		"postcss": "8.4.38",
+		"radix-ui": "^1.0.1",
 		"react": "18.3.1",
 		"react-dom": "18.3.1",
 		"react-icons": "^5.2.1",
@@ -53,5 +54,8 @@
 		"tailwind-variants": "^0.1.20",
 		"tailwindcss": "3.4.3",
 		"typescript": "5.0.4"
+	},
+	"devDependencies": {
+		"@svgr/webpack": "^8.1.0"
 	}
 }
