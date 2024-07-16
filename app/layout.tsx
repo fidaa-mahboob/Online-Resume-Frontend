@@ -34,7 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
@@ -48,8 +50,8 @@ export default function RootLayout({
               {children}
             </main>
             <footer className="w-full flex items-center justify-center py-3">
-                <span className="text-default-600">Copyright &copy;</span>
-                <p className="text-primary"> 2024 Fidaa Mahboob | Powered by AWS </p>
+              <span className="text-default-600">Copyright &copy;</span>
+              <p className="text-primary"> 2024 Fidaa Mahboob | Powered by AWS </p>
             </footer>
           </div>
         </Providers>

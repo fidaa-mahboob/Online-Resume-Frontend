@@ -14,8 +14,15 @@ export const RESUME_DATA = {
   ],
   certications: [
     {
-      cloud: "AWS",
-      name: "AWS Solution Architect Associate",
+      provider: "AWS",
+      name: "AWS Solution Architect Associate (SAA-CO3)",
+      link: "",
+      start: "2024",
+      end: "Current"
+    },
+    {
+      provider: "Hashicorp",
+      name: "Terraform Associate 003",
       link: "",
       start: "2024",
       end: "Current"
