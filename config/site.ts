@@ -3,19 +3,6 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Fidaa Mahboob",
   description: "Make beautiful websites regardless of your design experience.",
-  navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },{
-      label: "Resume",
-      href: "/resume",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    }
-  ],
   navMenuItems: [
     {
       label: "Home",
