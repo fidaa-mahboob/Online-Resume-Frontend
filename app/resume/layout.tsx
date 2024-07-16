@@ -1,5 +1,5 @@
 import { RESUME_DATA } from "@/data/resume-data";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon} from "lucide-react";
 
 export default function ResumeLayout({
   children,

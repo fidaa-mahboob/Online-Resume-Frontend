@@ -2,7 +2,7 @@
 
 import { Card, CardHeader } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
-import React, { Suspense, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export default function BlogPage() {
 

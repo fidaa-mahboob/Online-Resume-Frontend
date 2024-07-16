@@ -1,10 +1,8 @@
-import { title } from "@/components/primitives";
 import { ProjectCard } from "@/components/project-card";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, } from "@/components/ui/card";
 import { Section } from "@/components/ui/section";
 import { RESUME_DATA } from "@/data/resume-data";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 
 export default function ResumePage() {
 
