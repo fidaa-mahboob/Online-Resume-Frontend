@@ -24,7 +24,7 @@ export default function ResumePage() {
         <h2 className="text-xl font-extrabold">Work Experience</h2>
         {RESUME_DATA.work.map((work) => {
           return (
-            <Card key={work.company} className="hover:bg-purple-200 border border-muted hover:border-black">
+            <Card key={work.company} className="hover:bg-purple-200 p-4 border border-muted hover:border-black">
               <CardHeader>
                 <div className="flex items-center justify-between gap-x-2 text-base">
                   <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -81,7 +81,7 @@ export default function ResumePage() {
         <h2 className="text-xl font-extrabold">Certifications</h2>
         {RESUME_DATA.certications.map((cert) => {
           return (
-            <Card key={cert.name} className="hover:bg-purple-200 border border-muted hover:border-black">
+            <Card key={cert.name} className="hover:bg-purple-200 p-4 border border-muted hover:border-black">
               <CardHeader>
                 <div className="flex items-center justify-between gap-x-2 text-base">
                   <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
@@ -104,7 +104,7 @@ export default function ResumePage() {
         <h2 className="text-xl font-extrabold">Education</h2>
         {RESUME_DATA.education.map((education) => {
           return (
-            <Card key={education.school} className="hover:bg-purple-200 border border-muted hover:border-black">
+            <Card key={education.school} className="hover:bg-purple-200 p-4 border border-muted hover:border-black">
               <CardHeader>
                 <div className="flex items-center justify-between gap-x-2 text-base">
                   <h3 className="font-semibold leading-none">
