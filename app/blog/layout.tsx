@@ -12,7 +12,7 @@ export default function BlogLayout({
           <p className="sm:text-lg text-base text-center text-gray-200">Embark on unforgettable journeys. Book your dream vacation today!</p>
         </div>
       </div>
-      <section className="mx-auto w-full max-w-2xl space-y-8 bg-purple-400 print:space-y-6">
+      <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
         {children}
       </section>
     </section>
