@@ -2,7 +2,7 @@
 export const RESUME_DATA = {
   name: "Fidaa Mahboob",
   title: "Full Stack Software Engineer",
-  about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  about: "A tech-savvy software engineer skilled in various industry standard technologies who love's trying out new technologies. Experienced in supporting and lifting tech projects from the ground up. Relishes a challenge and can take projects from zero to hero through working to a high standard and managing time effectively. He loves eating Italian food especially pizza 🍕 and when he is not in front of his laptop you will find him enjoying long walks.",
   skills: ["React", "Javascript", "Java", "Terraform", "AWS", "Typescript", "Python", "HTML", "CSS", "Tailwind CSS", "Docker"],
   education: [
     {
